@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="title">
+        <div id="title-logo">
+          <img
+            id="title-logo-img"
+            src="https://www.logodesign.net/logo/court-building-with-pillars-in-square-4171ld.png?nwm=1&nws=1&industry=lawyer&sf=&txt_keyword=All"
+            alt="logo"
+          />
+        </div>
+        <div id="title-buttom">
+          <button id="title-buttom-call" type="button" value="button_call">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+      <div id="popupWindow__call" class="popupWindow__call__hiden hiden">
+        <form>
+          <div class="call__order">
+            <input
+              class="popupWindow__close"
+              type="image"
+              src="https://cdn.icon-icons.com/icons2/1157/PNG/512/1487086345-cross_81577.png"
+              alt="close"
+            />
+            <p id="call__order__text1">Заказать звонок</p>
+            <p id="call__order__text2">
+              Оставьте свой номер, мы свяжемся с вами в ближайшее время
+            </p>
+            <label for="userPhone">Ваш телефон:</label>
+            <p>
+              <input
+                type="tel"
+                required
+                name="phone"
+                placeholder="+7 800 098 0000"
+                size="30"
+                id="userPhone"
+              />
+            </p>
+          </div>
+          <div class="phone__buttons">
+            <button id="phone__buttons-submit" type="submit">Заказать</button>
+          </div>
+        </form>
+      </div>
+      <div id="main">
+        <p id="main-text">Сколько стоят услуги юриста по вашему вопросу?</p>
+        <p id="main-text2">
+          Пройдите тест и узнайте стоимость необходимых вам юридических услуг
+        </p>
+      </div>
+      <div id="info1">
+        <p id="info1-text">
+          Первая консультация наших специалистов полностью бесплатно
+        </p>
+      </div>
+      <div id="info2">
+        <p id="info2-text">
+          Вы сами выберете себе специалиста, который вам больше всего подойдет
+        </p>
+      </div>
+      <div id="info3">
+        <p id="info3-text">
+          Прозрачная комиссия — процент от стоимости оказанных услуг
+        </p>
+      </div>
+      <div id="main__button">
+        <button id="main__buttom__test" type="button" value="button_test">
+          Начать тест
+        </button>
+      </div>
+      <div id="popupWindow__test" class="popupWindow__test__hiden hiden">
+        <form>
+          <input
+            class="popupWindow__close"
+            type="image"
+            src="https://cdn.icon-icons.com/icons2/1157/PNG/512/1487086345-cross_81577.png"
+            alt="close"
+          />
+          <p id="test__text1">Вы обращаетесь к юристу впервые?</p>
+          <label>
+            <input id="radio" type="radio" name="one" value="rad1" />
+            Впервые </label
+          ><br />
+          <label>
+            <input id="radio" type="radio" name="two" value="rad2" />
+            Обращался ранее
+          </label>
+          <div id="next__button2">
+            <button id="next__button1__test" type="button" value="button_next1">
+              Далее
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="popupWindow__test2" class="popupWindow__test__hiden hiden">
+        <form>
+          <input
+            class="popupWindow__close"
+            type="image"
+            src="https://cdn.icon-icons.com/icons2/1157/PNG/512/1487086345-cross_81577.png"
+            alt="close"
+          />
+          <p id="test__text1">Какой вид помощи требуется?</p>
+          <label>
+            <input id="radio" type="radio" name="help1" value="rad3" />
+            Письменная консультация </label
+          ><br />
+          <label>
+            <input id="radio" type="radio" name=help2" value="rad4" /> Устная
+            консультация
+          </label>
+          <div id="next__button2">
+            <button id="next__button2__test" type="button" value="button_next2">
+              Далее
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="popupWindow__test3" class="popupWindow__test__hiden hiden">
+        <form>
+          <input
+            class="popupWindow__close"
+            type="image"
+            src="https://cdn.icon-icons.com/icons2/1157/PNG/512/1487086345-cross_81577.png"
+            alt="close"
+          />
+          <p id="test__text2">Введите ваш e-mail и получите расчет стоимости</p>
+          <p><input type="email" placeholder="name@example.com" /></p>
+          <div id="next__button3">
+            <button id="next__button3__test" type="submit" value="button_next3">
+              Отправить
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="phone">
+        <img
+          id="phone-logo"
+          src="https://www.iconpacks.net/icons/1/free-phone-icon-1-thumb.png"
+          alt="phone logo"
+        />
+        <a href="tel:888008000"> 8-880-08000</a>
+      </div>
+      <div id="mail">
+        <img
+          id="mail-logo"
+          src="https://cdn-icons-png.flaticon.com/256/665/665072.png"
+          alt="mail logo"
+        />
+        <p id="site__mail">urist@gmail.com</p>
+      </div>
+    </div>
+    <script async src="./index.js" type="module"></script>
+    <script async src="./starttest.js" type="module"></script>
+  </body>
+</html>
